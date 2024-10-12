@@ -4,35 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee List</title>
-    <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Additional CSS if needed */
-        body {
-            background-color: #f7fafc;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-    </style>
-    <script>
-        // Add your JavaScript here (if needed)
-        function handleAction(name) {
-            alert("Action for " + name);
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
-
-    <!-- Main Container -->
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-center mb-8">Employee List</h1>
-
-        <!-- Table to display employee data -->
-        <table class="table-auto w-full bg-white shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-4">Employee List</h1>
+        <table class="table-auto w-full bg-white shadow-md rounded">
             <thead>
-                <tr class="bg-blue-500 text-white">
+                <tr class="bg-gray-200">
                     <th class="px-4 py-2">Name</th>
                     <th class="px-4 py-2">Job Title</th>
                     <th class="px-4 py-2">Department</th>
@@ -40,70 +20,71 @@
                     <th class="px-4 py-2">Action</th>
                 </tr>
             </thead>
-            <tbody class="text-center">
-                <!-- Employee 1 -->
-                <tr class="border-b">
-                    <td class="border px-4 py-2">Juan Dela Cruz</td>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Ivan Petrov</td>
                     <td class="border px-4 py-2">Software Engineer</td>
                     <td class="border px-4 py-2">IT</td>
-                    <td class="border px-4 py-2">juan@example.com</td>
+                    <td class="border px-4 py-2">ivan.petrov@sinksrus.com</td>
                     <td class="border px-4 py-2">
-                        <button onclick="handleAction('Juan Dela Cruz')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Action
-                        </button>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showModal('Ivan Petrov')">View Details</button>
                     </td>
                 </tr>
-                <!-- Employee 2 -->
-                <tr class="border-b">
-                    <td class="border px-4 py-2">Maria Santos</td>
-                    <td class="border px-4 py-2">Project Manager</td>
-                    <td class="border px-4 py-2">Operations</td>
-                    <td class="border px-4 py-2">maria@example.com</td>
+                <tr>
+                    <td class="border px-4 py-2">Pedro Los Baños</td>
+                    <td class="border px-4 py-2">Marketing Manager</td>
+                    <td class="border px-4 py-2">Marketing</td>
+                    <td class="border px-4 py-2">pedro_los_banos@sinksrus.com</td>
                     <td class="border px-4 py-2">
-                        <button onclick="handleAction('Maria Santos')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Action
-                        </button>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showModal('Pedro Los Baños')">View Details</button>
                     </td>
                 </tr>
-                <!-- Employee 3 -->
-                <tr class="border-b">
-                    <td class="border px-4 py-2">Carlos Rivera</td>
+                <tr>
+                    <td class="border px-4 py-2">Ana Gómez</td>
                     <td class="border px-4 py-2">HR Specialist</td>
                     <td class="border px-4 py-2">HR</td>
-                    <td class="border px-4 py-2">carlos@example.com</td>
+                    <td class="border px-4 py-2">ana.gomez@sinksrus.com</td>
                     <td class="border px-4 py-2">
-                        <button onclick="handleAction('Carlos Rivera')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Action
-                        </button>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showModal('Ana Gómez')">View Details</button>
                     </td>
                 </tr>
-                <!-- Employee 4 -->
-                <tr class="border-b">
-                    <td class="border px-4 py-2">Ana Lopez</td>
-                    <td class="border px-4 py-2">Marketing Specialist</td>
-                    <td class="border px-4 py-2">Marketing</td>
-                    <td class="border px-4 py-2">ana@example.com</td>
-                    <td class="border px-4 py-2">
-                        <button onclick="handleAction('Ana Lopez')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Action
-                        </button>
-                    </td>
-                </tr>
-                <!-- Employee 5 -->
                 <tr>
-                    <td class="border px-4 py-2">Pedro Gonzales</td>
-                    <td class="border px-4 py-2">Accountant</td>
-                    <td class="border px-4 py-2">Finance</td>
-                    <td class="border px-4 py-2">pedro@example.com</td>
+                    <td class="border px-4 py-2">John Wu</td>
+                    <td class="border px-4 py-2">Sales Associate</td>
+                    <td class="border px-4 py-2">Sales</td>
+                    <td class="border px-4 py-2">john.wu@sinksrus.com</td>
                     <td class="border px-4 py-2">
-                        <button onclick="handleAction('Pedro Gonzales')" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">
-                            Action
-                        </button>
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showModal('John Wu')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Emma Wilson</td>
+                    <td class="border px-4 py-2">CEO</td>
+                    <td class="border px-4 py-2">Admin</td>
+                    <td class="border px-4 py-2">emma@sinksrus.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="showModal('Emma Wilson')">View Details</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <!-- Modal structure -->
+    <div id="employeeModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-1/3">
+            <h2 id="modalName" class="text-2xl font-bold mb-4"></h2>
+            <p><strong>Job Title:</strong> <span id="modalJobTitle"></span></p>
+            <p><strong>Department:</strong> <span id="modalDepartment"></span></p>
+            <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+            <p><strong>Contact No.:</strong> <span id="modalContact"></span></p>
+            <p><strong>Address:</strong> <span id="modalAddress"></span></p>
+            <p><strong>Sex:</strong> <span id="modalSex"></span></p>
+            <p><strong>Marital Status:</strong> <span id="modalMaritalStatus"></span></p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
