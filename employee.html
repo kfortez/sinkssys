@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-2xl font-bold mb-4">Employee List</h1>
+        <table class="table-auto w-full bg-white shadow-md rounded">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Job Title</th>
+                    <th class="px-4 py-2">Department</th>
+                    <th class="px-4 py-2">Email</th>
+                    <th class="px-4 py-2">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+   
+                <tr>
+                    <td class="border px-4 py-2">Juan Dela Cruz</td>
+                    <td class="border px-4 py-2">Software Engineer</td>
+                    <td class="border px-4 py-2">IT</td>
+                    <td class="border px-4 py-2">juan@example.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                            View Description
+                        </button>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td class="border px-4 py-2">Maria Santos</td>
+                    <td class="border px-4 py-2">Project Manager</td>
+                    <td class="border px-4 py-2">Operations</td>
+                    <td class="border px-4 py-2">maria@example.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                            View Description
+                        </button>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td class="border px-4 py-2">Carlos Rivera</td>
+                    <td class="border px-4 py-2">HR Specialist</td>
+                    <td class="border px-4 py-2">HR</td>
+                    <td class="border px-4 py-2">carlos@example.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                            View Description
+                        </button>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td class="border px-4 py-2">Ana Lopez</td>
+                    <td class="border px-4 py-2">Marketing Specialist</td>
+                    <td class="border px-4 py-2">Marketing</td>
+                    <td class="border px-4 py-2">ana@example.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                            View Description
+                        </button>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td class="border px-4 py-2">Pedro Gonzales</td>
+                    <td class="border px-4 py-2">Accountant</td>
+                    <td class="border px-4 py-2">Finance</td>
+                    <td class="border px-4 py-2">pedro@example.com</td>
+                    <td class="border px-4 py-2">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                            View Description
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="employeeModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close-button">&times;</span>
+            <h2 class="modal-header">Employee Information</h2>
+            <div class="modal-body">
+                <p><strong>Name:</strong> <span id="employeeName"></span></p>
+                <p><strong>Position:</strong> <span id="employeeJob"></span></p>
+                <p><strong>Department:</strong> <span id="employeeDepartment"></span></p>
+                <p><strong>Email:</strong> <span id="employeeEmail"></span></p>
+                <p><strong>Contact:</strong> <span id="employeeContact"></span></p>
+                <p><strong>Address:</strong> <span id="employeeAddress"></span></p>
+                <p><strong>Sex:</strong> <span id="employeeSex"></span></p>
+                <p><strong>Marital Status:</strong> <span id="employeeStatus"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
