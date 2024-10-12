@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Table styling */
+.table-auto {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-auto th,
+.table-auto td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-auto th {
+    background-color: #f2f2f2;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal styling */
+#employeeModal {
+    transition: opacity 0.3s ease;
+}
+
+#employeeModal .bg-white {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
